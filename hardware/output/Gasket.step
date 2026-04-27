@@ -10,7 +10,7 @@ FILE_DESCRIPTION(
 
 FILE_NAME(
 /* name */ 'Gasket.step',
-/* time_stamp */ '2026-04-22T09:49:42+09:00',
+/* time_stamp */ '2026-04-27T16:38:38+09:00',
 /* author */ (''),
 /* organization */ (''),
 /* preprocessor_version */ 'ST-DEVELOPER v20.1',
@@ -715,7 +715,7 @@ SOLID_ANGLE_UNIT()
 #662=PRODUCT_DEFINITION_SHAPE('',$,#665);
 #663=SHAPE_REPRESENTATION('',(#389),#655);
 #664=PRODUCT_DEFINITION_CONTEXT('part definition',#669,'design');
-#665=PRODUCT_DEFINITION('2026-04-22-09-49-42-114','Gasket',#666,#664);
+#665=PRODUCT_DEFINITION('2026-04-27-16-38-38-563','Gasket',#666,#664);
 #666=PRODUCT_DEFINITION_FORMATION('',$,#671);
 #667=PRODUCT_RELATED_PRODUCT_CATEGORY('Gasket','Gasket',(#671));
 #668=APPLICATION_PROTOCOL_DEFINITION('international standard',
@@ -723,7 +723,7 @@ SOLID_ANGLE_UNIT()
 #669=APPLICATION_CONTEXT(
 'Core Data for Automotive Mechanical Design Process');
 #670=PRODUCT_CONTEXT('part definition',#669,'mechanical');
-#671=PRODUCT('2026-04-22-09-49-42-114','Gasket',$,(#670));
+#671=PRODUCT('2026-04-27-16-38-38-563','Gasket',$,(#670));
 #672=PRESENTATION_STYLE_ASSIGNMENT((#673));
 #673=SURFACE_STYLE_USAGE(.BOTH.,#674);
 #674=SURFACE_SIDE_STYLE('',(#675));
