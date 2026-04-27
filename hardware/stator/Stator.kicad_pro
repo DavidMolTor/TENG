@@ -510,7 +510,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "output/GerberStator/",
+      "plot": "../output/GerberStator",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "Stator.step",

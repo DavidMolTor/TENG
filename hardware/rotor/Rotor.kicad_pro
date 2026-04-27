@@ -510,7 +510,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "output/GerberRotor/",
+      "plot": "../output/GerberRotor/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "Rotor.step",
