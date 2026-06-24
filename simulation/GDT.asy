@@ -1,0 +1,15 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal -64 -56 64 56
+WINDOW 0 0 -56 Bottom 2
+WINDOW 3 0 56 Top 2
+SYMATTR Value GDT
+SYMATTR Prefix X
+SYMATTR SpiceLine dcVmax=A Vmax1=B Vmax2=C Vglow=D Varc=E
+SYMATTR ModelFile ./2087.lib
+PIN -64 0 LEFT 8
+PINATTR PinName IN
+PINATTR SpiceOrder 1
+PIN 64 0 RIGHT 8
+PINATTR PinName OUT
+PINATTR SpiceOrder 2
