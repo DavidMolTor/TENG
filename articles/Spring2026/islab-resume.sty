@@ -1,0 +1,72 @@
+\ProvidesPackage{islab-resume}
+
+% TITLE
+
+% Seminar
+\global\let\@seminar\@empty
+\def\seminar#1{\gdef\@seminar{#1}} 
+% TotalPage
+\global\let\@totalpage\@empty
+\def\totalpage#1{\gdef\@totalpage{#1}}
+% Subtitle
+\global\let\@subtitle\@empty
+\def\subtitle#1{\gdef\@subtitle{#1}} 
+
+% MakeTitle
+\def\@maketitle{%
+\noindent\@seminar\hfill\@date%
+\vskip\baselineskip%
+\begin{center}
+{\bfseries\Large\@title}%
+\if\@subtitle\@empty\else{\par\@subtitle}\fi%
+\end{center}%
+\vskip-.5\baselineskip%
+\hfill{\large\@author}\par%
+\vskip-.5\baselineskip%
+\noindent\rule{\textwidth}{1pt}}%
+
+\def\maketitle{%
+\if@twocolumn\twocolumn[\@maketitle\vskip.9\baselineskip plus 3pt minus 2pt]
+\else
+\@maketitle\vspace*{-1.2\baselineskip}\vskip.1\baselineskip plus 3pt minus 2pt
+\fi}
+
+% HEADER
+
+\def\ps@islabresume{%
+ \let\@mkboth\@gobbletwo%
+ \def\@oddhead{\reset@font\hfil\thepage/\@totalpage}%
+ \def\@evenhead{\reset@font\thepage/\@totalpage\hfil}%
+ \let\@oddfoot\@empty%
+ \let\@evenfoot\@empty%
+}%
+
+\pagestyle{islabresume}
+
+%  LAYOUT
+
+\setlength{\topmargin}{0in}
+\addtolength{\topmargin}{-\headheight}
+\addtolength{\topmargin}{-\headsep}
+\setlength{\textheight}{\paperheight}
+\addtolength{\textheight}{-1.8in}
+\divide\textheight\baselineskip
+\multiply\textheight\baselineskip
+\addtolength{\textheight}{\topskip}
+
+\setlength{\columnsep}{2em}%
+\setlength{\columnseprule}{0\p@}
+\setlength{\oddsidemargin}{0\p@}
+\setlength{\textwidth}{\paperwidth}
+\addtolength{\textwidth}{-1in}
+\addtolength{\textwidth}{-\oddsidemargin}
+\addtolength{\textwidth}{-\columnsep}
+\addtolength{\textwidth}{-\columnseprule}
+\addtolength{\textwidth}{-.2in}
+\@tempdima=2em
+\divide\textwidth\@tempdima
+\multiply\textwidth\@tempdima
+\setlength{\evensidemargin}{\paperwidth}
+\addtolength{\evensidemargin}{-\textwidth}
+\addtolength{\evensidemargin}{-2in}
+\addtolength{\evensidemargin}{-\oddsidemargin}

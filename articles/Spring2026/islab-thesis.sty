@@ -1,0 +1,212 @@
+\ProvidesPackage{islab-thesis}
+\RequirePackage{boxedminipage,plext}
+
+% Thesis
+\global\let\@thesis\@empty
+\def\thesis#1{\gdef\@thesis{#1}}
+
+% Professor
+\global\let\@professor\@empty
+\def\professor#1{\gdef\@professor{#1}}
+
+% Department
+\global\let\@department\@empty
+\def\department#1{\gdef\@department{#1}}
+
+% StudentNumber
+\global\let\@studentnumber\@empty
+\def\studentnumber#1{\gdef\@studentnumber{#1}}
+
+% Author
+\global\let\@authore\@empty
+\def\authore#1{\gdef\@authore{#1}}
+
+% MakeTitle
+
+\def\maketitle{%
+\thispagestyle{empty}
+\begin{center}
+\LARGE
+\vfill
+\@thesis
+\vskip\baselineskip
+\@title
+\vskip\baselineskip
+指導教員~~\@professor~~教授
+\vfill
+\@department\par
+\@studentnumber\par
+\@author\\
+\@authore\\
+{\Large\@date}
+%\vfill
+\end{center}
+\setcounter{page}{0} % 邪道?
+}
+
+% BASELINE
+
+\renewcommand{\baselinestretch}{1.3}
+
+% LAYOUT
+
+\setlength{\oddsidemargin}{1.5in}
+\addtolength{\oddsidemargin}{-1in}
+\setlength{\evensidemargin}{\oddsidemargin}
+\setlength{\textwidth}{36zw}
+
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{38\baselineskip} % 30 * 1.3(baselinestretch) = 39
+\addtolength{\textheight}{\topskip}
+\setlength{\footskip}{0.6in}
+
+% CHAPTER
+
+\def\@makechapterhead#1{\hbox{}%
+  \vfill
+  \begin{center}
+  {\reset@font\huge\bfseries
+  \leavevmode
+  \ifnum \c@secnumdepth >\m@ne
+    \@chapapp\thechapter\@chappos
+    \vskip\baselineskip
+    #1
+  \else
+    #1\relax
+  \fi}
+  \end{center}
+  \vfill
+  \clearpage
+  \@afterindenttrue
+}
+
+% SECTION
+
+\let\@@section\section
+\def\section{\clearpage\@@section}
+
+% HEADER
+
+\def\ps@yanagithesis{\let\@mkboth\@gobbletwo
+   \def\@oddhead{\reset@font\hfil\leftmark}%
+   \def\@oddfoot{\reset@font\hfil\thepage\hfil}%
+   \let\@evenhead\@oddhead
+   \let\@evenfoot\@oddfoot
+   \def\chaptermark##1{\markboth{%
+      \ifnum \c@secnumdepth >\m@ne
+         \@chapapp\thechapter\@chappos\hskip1zw
+      \fi
+      ##1}{}}%
+}
+\pagestyle{yanagithesis}
+
+% CHAPTER
+
+\def\@schapter#1{%
+  \@makeschapterhead{#1}%
+  \addcontentsline{toc}{chapter}{#1}%
+  \markboth{#1}{#1}%
+  \@afterheading%
+}
+
+\let\@@tableofcontents\tableofcontents
+\def\tableofcontents{%
+  \def\@nobreakfalse{}%
+  \global\let\@@addcontentsline\addcontentsline%
+  \def\addcontentsline##1##2##3{}%
+  \@@tableofcontents%
+  \global\let\addcontentsline\@@addcontentsline%
+}
+
+\newcommand{\gratitude}{%
+\chapter*{謝辞}%
+\@afterindenttrue%
+}
+
+\renewcommand{\bibname}{参考文献}
+
+
+% MakeCover
+
+% Thesis
+\global\let\@thesist\@empty
+\def\thesist#1{\gdef\@thesist{#1}}
+
+% Title
+\global\let\@titlet\@empty
+\def\titlet#1{\gdef\@titlet{#1}}
+
+% MakeCover
+\def\makecover{%
+\clearpage%
+\setcounter{page}{0}
+\setlength{\oddsidemargin}{\paperwidth}%
+\addtolength{\oddsidemargin}{-\textwidth}%
+\addtolength{\oddsidemargin}{-2in}%
+\setlength{\oddsidemargin}{.5\oddsidemargin}%
+\pagestyle{empty}%
+
+\renewcommand{\baselinestretch}{.8}
+\bfseries\LARGE
+\setlength{\fboxrule}{2pt}%
+
+\begin{center}
+\vspace*{\baselineskip}
+\begin{boxedminipage}{\textwidth}
+\begin{center}
+\vspace*{\baselineskip}
+\@thesis\par
+\vspace*{1.5\baselineskip}
+\@title\par
+\vspace*{1.5\baselineskip}
+指導教員~~~\@professor~~~教授\par
+\vspace*{\baselineskip}
+\end{center}
+\end{boxedminipage}
+
+\vfill
+
+\begin{boxedminipage}{\textwidth}
+\begin{center}
+\renewcommand{\baselinestretch}{.5}\Large
+\vspace*{\baselineskip}
+\@department\par
+\vspace*{\baselineskip}
+\@studentnumber\par
+\vspace*{\baselineskip}
+{\LARGE
+\@author\par
+\vspace*{.5\baselineskip}
+\@authore}
+\vspace*{\baselineskip}
+\end{center}
+\end{boxedminipage}
+\vspace*{\baselineskip}
+\end{center}
+
+\newpage
+\setlength{\topmargin}{-1in}
+\addtolength{\topmargin}{1cm}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\oddsidemargin}{0pt}
+\newdimen\@coverheight
+\setlength{\@coverheight}{\paperheight}
+\addtolength{\@coverheight}{-2cm}
+
+\def\@backtitlebox##1{\makebox(0,0)[t]{\parbox<t>{\@coverheight}{##1}}}
+\def\@backtitlecontent{\@thesist\hfill\@titlet\hfill\@author}
+
+\noindent%
+\unitlength=1cm%
+\begin{picture}(0,0)
+ \put(0,0){\@backtitlebox{\tiny\@backtitlecontent}}
+ \put(2,0){\@backtitlebox{\scriptsize\@backtitlecontent}}
+ \put(4,0){\@backtitlebox{\footnotesize\@backtitlecontent}}
+ \put(6,0){\@backtitlebox{\small\@backtitlecontent}}
+ \put(8,0){\@backtitlebox{\normalsize\@backtitlecontent}}
+ \put(10,0){\@backtitlebox{\large\@backtitlecontent}}
+ \put(12,0){\@backtitlebox{\Large\@backtitlecontent}}
+ \put(14,0){\@backtitlebox{\LARGE\@backtitlecontent}}
+\end{picture}}
