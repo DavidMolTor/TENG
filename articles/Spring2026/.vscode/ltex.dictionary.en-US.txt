@@ -1,0 +1,17 @@
+TENG
+TORO
+nanogenerators
+TENGs
+S-TENGs
+S-TENG
+F-TENGs
+F-TENG
+FSS-TENG
+FSS-TENGs
+Villard
+µC
+Bezier curves
+Voc
+Qsc
+LTspice
+pk-pk

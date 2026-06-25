@@ -14,14 +14,14 @@
 \author{MOLINA TORO David}
 \seminar{2026 Spring Semester Integrated System Design Seminar}
 \date{2026-06-26}
-\title{Design of a Rotational Floating Self-Excited TENG}
-\totalpage{1}
+\title{Design of a Rotational Floating Self-Excited Sliding TENG}
+\totalpage{5}
 \begin{document}
 \maketitle
 
 \section{Abstract}
 
-The search for alternative energy sources is a high-priority objective in today's society. Significant reductions in power consumption and physical size for microcontroller-based systems, combined with new long-range communication technologies, enable the deployment of sensors in remote locations via mesh networks, thereby allowing for the affordable implementation of decentralized systems \cite{FISCHER2012}. This research aims to analyze recent advances in this field and to identify viable alternatives for addressing these types of challenges.
+The search for alternative energy sources is a high-priority objective in modern society. Significant reductions in power consumption and physical size for microcontroller-based systems, combined with new long-range communication technologies, enable the deployment of sensors in remote locations via mesh networks, thereby allowing for the affordable implementation of decentralized systems \cite{FISCHER2012}. This research aims to analyze recent advances in this field and to identify viable alternatives for addressing these types of challenges.
 
 
 \section{Introduction}
@@ -34,7 +34,7 @@ This research focuses on sliding-mode TENGs, specifically those based on the cir
 
 \subsection{Sliding TENG}
 
-Sliding-mode TENGs (S-TENGs) have been considered among the most significant since their emergence \cite{NIU2015}. This type of generator employs a pair of triboelectric surfaces that slide against each other involving contact or lateral friction, diagram of operation shown in Figure \ref{fig:SlidingTENG}. They offer high output compared to other types, making them ideal for continuous energy harvesting. However, they are subject to wear caused by friction between the surfaces, and the high voltage peaks generated between them can lead to air breakdown, completely nullifying the triboelectric effect.
+Sliding-mode TENGs (S-TENGs) have been considered among the most significant since their emergence \cite{NIU2015}. This type of generator employs a pair of triboelectric surfaces that slide against each other involving contact or lateral friction, as shown in Figure \ref{fig:SlidingTENG}. They offer high output compared to other types, making them ideal for continuous energy harvesting. However, they are subject to wear caused by friction between the surfaces, and the high voltage peaks generated between them can lead to air breakdown, completely nullifying the triboelectric effect.
 
 \begin{figure} [H]
   \centering
@@ -45,7 +45,7 @@ Sliding-mode TENGs (S-TENGs) have been considered among the most significant sin
 
 \subsection{Floating TENG}
 
-Unlike S-TENGs, floating TENGs (F-TENGs) do not generate energy through direct friction between their contacts; instead, an electrode floats and operates in a non-contact sliding mode, diagram of operation shown in Figure \ref{fig:FloatingTENG}. Consequently, the device undergoes negligible wear during operation and maintains high power output due to minimal frictional losses in the system. However, the output can be severely reduced if the existing charge on the contacts drops abruptly.
+Unlike S-TENGs, floating TENGs (F-TENGs) do not generate energy through direct friction between their contacts; instead, an electrode floats and operates in a non-contact sliding mode, as shown in Figure \ref{fig:FloatingTENG}. Consequently, the device undergoes negligible wear during operation and maintains high power output due to minimal frictional losses in the system. However, the output can be severely reduced if the existing charge on the contacts drops abruptly.
 
 \begin{figure} [H]
   \centering
@@ -65,7 +65,7 @@ Floating self-excited charge TENGs (FSS-TENGs) go a step beyond F-TENGs by incor
 
 Recent research on circular-motion-based TENGs highlights two complementary approaches to enhancing performance: amplifying surface charge density via excitation circuits and reducing friction between surfaces through non-contact operating modes.
 
-Bipolar charge injection, achieved using a voltage multiplier circuit (VMC) connected to the two electrode groups on one of the surfaces, significantly increases the potential difference and, consequently, the amount of charge transferred between the contacts \cite{XIA2025}. Tests show that charge transfer increases by approximately two orders of magnitude compared to a system without excitation, while maintaining non-contact operation and high durability. Example shown in Figure \ref{fig:InjectionTENG}.
+Bipolar charge injection, achieved using a voltage multiplier circuit (VMC) connected to the two electrode groups on one of the surfaces, significantly increases the potential difference and, consequently, the amount of charge transferred between the contacts \cite{XIA2025}. Tests show that charge transfer increases by approximately two orders of magnitude compared to a system without excitation, while maintaining non-contact operation and high durability. Example of a charge injection technique shown in Figure \ref{fig:InjectionTENG}.
 
 \begin{figure} [H]
   \centering
@@ -85,15 +85,22 @@ All three studies demonstrate how incorporating charge injection, via VMC or sec
 
 This research involved multiple tasks related to the design, implementation, and initial validation of a rotational FSS-TENG system. These stages focused on three main processes: developing a controller for a stepper motor to manage the FSS-TENG's movement; designing the stator and rotor geometries and fabricating them using PCB technology; and constructing a test bench to conduct an initial experimental evaluation of the prototype.
 
-\subsection{TENG Structure}
+\subsection{TENG Surfaces}
 
-First, the design of the FSS-TENG stator and rotor was developed, based on optimization criteria reviewed during the research phase. Specifically, the geometry of the contact leading edges was improved to enhance the performance of non-contact, sliding-mode rotary TENGs. Parameters such as the number of contacts, the gap between the stator and rotor, the total surface diameter, and the rotor's angular velocity were taken into account. Additionally, a connection architecture was established to enable the future implementation of charge injection strategies and contact group modifications. The final design was implemented on a pair of PCBs with a diameter of 200 mm, featuring a total of 20 contacts per surface.
+First, the design of the FSS-TENG stator and rotor was developed, based on optimization criteria reviewed during the research phase. Specifically, the geometry of the contact leading edges was improved to enhance the performance of non-contact, sliding-mode rotary TENGs. Parameters such as the number of contacts, the gap between the stator and rotor, the total surface diameter, and the rotor's angular velocity were taken into account. Additionally, a connection architecture was established to enable the future implementation of charge injection strategies and contact group modifications. The final design was implemented on a pair of PCBs with a diameter of 200 mm, featuring a total of 20 contacts per surface. A model of the TENG stator and rotor PCBs can be seen in Figure \ref{fig:RotorStator}.
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=0.95\columnwidth]{Images/Rotor Stator.png}
+  \caption{Model view of the TENG PCBs, rotor (left) and stator (right)}
+  \label{fig:RotorStator}
+\end{figure}
 
 \subsection{Motor Driver}
 
 Secondly, a control system was developed for the Nema17 stepper motor responsible for providing the rotational movement to the FSS-TENG rotor during testing. The initial version of the controller was implemented using a driver based on the A4988 chip paired with an RP2040 microcontroller, resulting in a very low-cost system that included a user interface via an OLED display and a rotary encoder. However, initial tests revealed several design limitations, including abrupt speed fluctuations and missed steps during operation at speeds exceeding 3 Hz.
 
-Consequently, a second version of the controller was designed using the TMC2209 chip, a component found in many commercial devices that offers features capable of resolving the previous issues. This new design was implemented on a fully custom PCB incorporating an ESP32-S3-based development board, thereby providing the system with wireless connectivity. To simplify the user interface, the rotary encoder was replaced with a series of board-mounted buttons, allowing for interaction with the controller without the need for a computer or additional device. A view of the final motor driver can be seen in Figure \ref{fig:StepperDriver}.
+Consequently, a second version of the controller was designed using the TMC2209 chip, a component found in many commercial devices that offers features capable of resolving the previous issues. This new design was implemented on a fully custom PCB incorporating an ESP32-S3-based development board, thereby providing the system with wireless connectivity. To simplify the user interface, the rotary encoder was replaced with a series of board-mounted buttons, allowing for interaction with the controller without the need for a computer or additional device. A model of the final motor driver can be seen in Figure \ref{fig:StepperDriver}.
 
 \begin{figure} [H]
   \centering
@@ -104,7 +111,9 @@ Consequently, a second version of the controller was designed using the TMC2209 
 
 \subsection{Test Bench}
 
-Finally, a PLA-printed test rig was developed in which the generator's rotational movement occurs in the horizontal plane, shon in Figure \ref{fig:TestBench}. This rig allowed for the integration of the stepper motor, the motor control board, the TENG's mechanical supports, and a spacer, to ensure separation between the rotor and stator, onto a single platform. However, initial tests revealed the system's limitations; a lack of fine control over orientation and contact spacing, combined with excessive friction between the two discs, severely hindered the generator's smooth operation. Thanks to the capabilities of the controller used, initial validation was possible, albeit at the cost of high-power consumption to enable the motor to drive the platform's movement.
+Finally, a PLA-printed test rig was developed in which the generator's rotational movement occurs in the horizontal plane, as shown in Figure \ref{fig:TestBench}. This rig allowed for the integration of the stepper motor, the motor control board, the TENG's mechanical supports, and a spacer, to ensure separation between the rotor and stator, onto a single platform. However, initial tests revealed the system's limitations; a lack of fine control over orientation and contact spacing, combined with excessive friction between the two discs, severely hindered the generator's smooth operation. Thanks to the capabilities of the controller used, initial validation was possible, albeit at the cost of high-power consumption to enable the motor to drive the platform's movement.
+
+Overall, this work establishes a solid foundation for the subsequent stages of system optimization, addressing mechanical, electrical, and geometric aspects.
 
 \begin{figure} [H]
   \centering
@@ -113,24 +122,14 @@ Finally, a PLA-printed test rig was developed in which the generator's rotationa
   \label{fig:TestBench}
 \end{figure}
 
-Overall, this work establishes a solid foundation for the subsequent stages of system optimization, addressing mechanical, electrical, and geometric aspects.
-
-
 \section{Results}
 
-Initial simulations in the LTspice environment made it possible to verify the general behavior of the FSS-TENG model (shon in Figure \ref{fig:LTSpiceFSSTENG}) under various operating conditions. In particular, it was observed that generator performance improves significantly when the gap between contacts is reduced (Figure \ref{fig:SimulationGap}) and the rotation speed is increased (Figure \ref{fig:SimulationRPM}). In practice, however, there are limitations; depending on the implementation environment, it may not be feasible to achieve very high angular speeds while reliably maintaining the contact gap.
-
-% \begin{figure} [H]
-%   \centering
-%   \includegraphics[width=0.95\columnwidth]{Images/LTSpice FSS TENG.png}
-%   \caption{Simulation circuit for the FSS-TENG in LTspice}
-%   \label{fig:LTSpiceFSSTENG}
-% \end{figure}
+Initial simulations in the LTspice environment made it possible to verify the general behavior of the FSS-TENG model under various operating conditions. In particular, it was observed that generator performance improves significantly when the gap between contacts is reduced (Figure \ref{fig:SimulationGap}) and the rotation speed is increased (Figure \ref{fig:SimulationRPM}). In practice, however, there are limitations; depending on the implementation environment, it may not be feasible to achieve very high angular speeds while reliably maintaining the contact gap.
 
 \begin{figure} [H]
   \centering
   \includegraphics[width=0.95\columnwidth]{Images/Simulation Gap.png}
-  \caption{Open-circuit voltage at different air gap between contacts}
+  \caption{Open-circuit voltage at different air gaps between contacts}
   \label{fig:SimulationGap}
 \end{figure}
 
@@ -143,7 +142,7 @@ On the other hand, increasing the number of contacts raises the generation frequ
   \label{fig:SimulationRPM}
 \end{figure}
 
-Initial experimental tests of the FSS-TENG demonstrated the prototype's capabilities. These tests involved measuring the FSS-TENG's open-circuit output voltage, without external charge injection, using the oscilloscope probe's own 1 M resistance as the load. The results obtained are shown in \ref{tab:TestResults}.
+Initial experimental tests of the FSS-TENG demonstrated the prototype's capabilities. These tests involved measuring the FSS-TENG's open-circuit voltage, without external charge injection, using the oscilloscope probe's own 1 M resistance as the load. The results are shown in Table \ref{tab:TestResults}.
 
 \begin{table}[H]
   \centering
@@ -157,7 +156,7 @@ Initial experimental tests of the FSS-TENG demonstrated the prototype's capabili
      300 & 32.6 & 99.3 \\[0.1cm]
   \hline
   \end{tabular}
-  \caption{Open-circuit output voltage for the FSS-TENG prototype} 
+  \caption{Open-circuit voltage for the FSS-TENG prototype} 
   \label{tab:TestResults}
 \end{table}
 
