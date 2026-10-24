@@ -337,7 +337,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 128.27) (xy 130.81 128.27)
+			(xy 119.38 128.27) (xy 130.81 128.27)
 		)
 		(stroke
 			(width 0)
@@ -357,7 +357,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 106.68) (xy 130.81 106.68)
+			(xy 119.38 106.68) (xy 130.81 106.68)
 		)
 		(stroke
 			(width 0)
@@ -397,7 +397,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 85.09) (xy 130.81 85.09)
+			(xy 119.38 85.09) (xy 130.81 85.09)
 		)
 		(stroke
 			(width 0)
@@ -457,7 +457,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 63.5) (xy 130.81 63.5)
+			(xy 119.38 63.5) (xy 130.81 63.5)
 		)
 		(stroke
 			(width 0)
@@ -505,6 +505,46 @@
 		)
 		(uuid "e56f5046-e4a0-40c1-9207-b78b8263ccb5")
 	)
+	(label "CON_3"
+		(at 128.27 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4e13294b-7a07-4b86-a8e6-b23ea329c7c1")
+	)
+	(label "CON_2"
+		(at 128.27 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6d16caa7-2ef5-4a8b-9742-6257bef8a2f2")
+	)
+	(label "CON_4"
+		(at 128.27 128.27 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8a3e33fc-43cb-4b4f-9e04-c89f3093165f")
+	)
+	(label "CON_1"
+		(at 128.27 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cece37f1-3e33-460b-acfa-9c835d400182")
+	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
 		(at 140.97 90.17 0)
@@ -512,8 +552,8 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board no)
-		(in_pos_files yes)
+		(on_board yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20bec8d6-2853-4f23-bc18-3b9f0b25487d")
@@ -613,8 +653,8 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board no)
-		(in_pos_files yes)
+		(on_board yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "33791cdc-d67a-48a4-9bc8-ccd93ef3face")
@@ -709,7 +749,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
-		(at 120.65 106.68 0)
+		(at 114.3 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -719,7 +759,7 @@
 		(dnp no)
 		(uuid "380e723b-ce12-42fd-be9c-4679e42f70d3")
 		(property "Reference" "J3"
-			(at 120.65 100.584 0)
+			(at 114.3 100.584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -729,7 +769,7 @@
 			)
 		)
 		(property "Value" "POGO D2.0mm"
-			(at 120.65 103.124 0)
+			(at 114.3 103.124 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -738,8 +778,8 @@
 				)
 			)
 		)
-		(property "Footprint" "TENG:PogoPin_D2.0mm"
-			(at 120.65 106.68 0)
+		(property "Footprint" "TENG:PogoPin_D2.0mm_JOIN"
+			(at 114.3 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -750,7 +790,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 106.68 0)
+			(at 114.3 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -761,7 +801,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 120.65 106.68 0)
+			(at 114.3 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -772,7 +812,7 @@
 			)
 		)
 		(property "JLC Part" "C20612445"
-			(at 120.65 106.68 0)
+			(at 114.3 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -783,7 +823,7 @@
 			)
 		)
 		(property "Manufacturer Part" "YZ50315020R-03"
-			(at 120.65 106.68 0)
+			(at 114.3 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -812,8 +852,8 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board no)
-		(in_pos_files yes)
+		(on_board yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3aa22020-619e-4c92-884a-b45fe0624780")
@@ -913,8 +953,8 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board no)
-		(in_pos_files yes)
+		(on_board yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a1bb094-30ef-405b-bb12-e52b40e83268")
@@ -1009,7 +1049,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
-		(at 120.65 63.5 0)
+		(at 114.3 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1019,7 +1059,7 @@
 		(dnp no)
 		(uuid "6546c782-c1c3-4596-b7f2-dcc203d2dc20")
 		(property "Reference" "J1"
-			(at 120.65 57.404 0)
+			(at 114.3 57.404 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1029,7 +1069,7 @@
 			)
 		)
 		(property "Value" "POGO D2.0mm"
-			(at 120.65 59.944 0)
+			(at 114.3 59.944 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1038,8 +1078,8 @@
 				)
 			)
 		)
-		(property "Footprint" "TENG:PogoPin_D2.0mm"
-			(at 120.65 63.5 0)
+		(property "Footprint" "TENG:PogoPin_D2.0mm_JOIN"
+			(at 114.3 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1050,7 +1090,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 63.5 0)
+			(at 114.3 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1061,7 +1101,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 120.65 63.5 0)
+			(at 114.3 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1072,7 +1112,7 @@
 			)
 		)
 		(property "JLC Part" "C20612445"
-			(at 120.65 63.5 0)
+			(at 114.3 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1083,7 +1123,7 @@
 			)
 		)
 		(property "Manufacturer Part" "YZ50315020R-03"
-			(at 120.65 63.5 0)
+			(at 114.3 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1112,8 +1152,8 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board no)
-		(in_pos_files yes)
+		(on_board yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87eadbe0-09e3-4254-a489-c6bbb94f3691")
@@ -1213,8 +1253,8 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board no)
-		(in_pos_files yes)
+		(on_board yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab0aa18a-5ba5-41c5-a5f1-73ca8f6e2c5c")
@@ -1314,8 +1354,8 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board no)
-		(in_pos_files yes)
+		(on_board yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c13d6ea2-72c3-4cae-9cc8-ff3e7528820c")
@@ -1410,7 +1450,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
-		(at 120.65 85.09 0)
+		(at 114.3 85.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1420,7 +1460,7 @@
 		(dnp no)
 		(uuid "c8836563-71c0-42b9-bb7f-949956bbf480")
 		(property "Reference" "J2"
-			(at 120.65 78.994 0)
+			(at 114.3 78.994 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1430,7 +1470,7 @@
 			)
 		)
 		(property "Value" "POGO D2.0mm"
-			(at 120.65 81.534 0)
+			(at 114.3 81.534 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1439,8 +1479,8 @@
 				)
 			)
 		)
-		(property "Footprint" "TENG:PogoPin_D2.0mm"
-			(at 120.65 85.09 0)
+		(property "Footprint" "TENG:PogoPin_D2.0mm_JOIN"
+			(at 114.3 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1451,7 +1491,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 85.09 0)
+			(at 114.3 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1462,7 +1502,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 120.65 85.09 0)
+			(at 114.3 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1473,7 +1513,7 @@
 			)
 		)
 		(property "JLC Part" "C20612445"
-			(at 120.65 85.09 0)
+			(at 114.3 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1484,7 +1524,7 @@
 			)
 		)
 		(property "Manufacturer Part" "YZ50315020R-03"
-			(at 120.65 85.09 0)
+			(at 114.3 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1508,7 +1548,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
-		(at 120.65 128.27 0)
+		(at 114.3 128.27 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1518,7 +1558,7 @@
 		(dnp no)
 		(uuid "e5a7b807-8209-49b2-a36b-b70c87bdc6cd")
 		(property "Reference" "J4"
-			(at 120.65 122.174 0)
+			(at 114.3 122.174 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1528,7 +1568,7 @@
 			)
 		)
 		(property "Value" "POGO D2.0mm"
-			(at 120.65 124.714 0)
+			(at 114.3 124.714 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1537,8 +1577,8 @@
 				)
 			)
 		)
-		(property "Footprint" "TENG:PogoPin_D2.0mm"
-			(at 120.65 128.27 0)
+		(property "Footprint" "TENG:PogoPin_D2.0mm_JOIN"
+			(at 114.3 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1549,7 +1589,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 128.27 0)
+			(at 114.3 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1560,7 +1600,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 120.65 128.27 0)
+			(at 114.3 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1571,7 +1611,7 @@
 			)
 		)
 		(property "JLC Part" "C20612445"
-			(at 120.65 128.27 0)
+			(at 114.3 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1582,7 +1622,7 @@
 			)
 		)
 		(property "Manufacturer Part" "YZ50315020R-03"
-			(at 120.65 128.27 0)
+			(at 114.3 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1611,8 +1651,8 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board no)
-		(in_pos_files yes)
+		(on_board yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8494cf7-9055-44b6-8d21-ef735231a812")

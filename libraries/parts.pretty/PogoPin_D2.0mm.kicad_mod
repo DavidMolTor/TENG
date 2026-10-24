@@ -9,7 +9,7 @@
 		(at 0 -1.998 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "01c17f80-0c41-42ed-ad2b-de304af3582d")
+		(uuid "90408d2e-805e-4f90-b9b8-a37d59b1cc2f")
 		(effects
 			(font
 				(size 1 1)
@@ -20,7 +20,7 @@
 	(property "Value" "PogoPin_D2.0mm"
 		(at 0 2.05 0)
 		(layer "F.Fab")
-		(uuid "4bed7a11-3bbc-4b18-986e-138f7b11d5ce")
+		(uuid "e033ae1b-8748-4e20-870e-b82a6f03aab1")
 		(effects
 			(font
 				(size 1 1)
@@ -33,7 +33,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "7e84fc52-6535-4a6c-a797-f4d56b670880")
+		(uuid "cf966833-7de6-44e9-b89a-1e205c8bec0d")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -46,7 +46,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "91254ee3-e817-450d-9aa9-f75b2fa86ac3")
+		(uuid "46e0524c-e988-4af6-8deb-02f3f358963b")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -65,12 +65,12 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "7b0b041c-8071-4803-a7f9-a8280e066e09")
+		(uuid "857035d5-151e-4f6e-a3d5-a43c07a7069b")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 -2 0)
 		(layer "F.Fab")
-		(uuid "bb24dc35-7319-4c72-844f-4767f6ce5a57")
+		(uuid "9a7df3da-87dc-433e-9eb5-826dc0a254a7")
 		(effects
 			(font
 				(size 1 1)
@@ -81,8 +81,14 @@
 	(pad "1" smd circle
 		(at 0 0)
 		(size 2.2 2.2)
-		(layers "F.Cu" "F.Mask")
-		(uuid "53080aaf-4e58-4720-9bad-b885c39dc317")
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ba9e5772-9cb9-48c0-b51d-255370d83018")
+	)
+	(pad "1" smd circle
+		(at 0 0)
+		(size 2.2 2.2)
+		(layers "B.Cu" "B.Mask")
+		(uuid "f1185c23-1e6d-4bac-82f4-e43589fe6a78")
 	)
 	(embedded_fonts no)
 	(model "${TENG_PARTS_LIBRARY_DIR}/parts.3dshapes/Pogo.step"

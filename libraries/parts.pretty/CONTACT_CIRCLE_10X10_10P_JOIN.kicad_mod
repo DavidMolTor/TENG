@@ -1,0 +1,156 @@
+(footprint "CONTACT_CIRCLE_10X10_10P_JOIN"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "63a1ca25-b9dc-47b3-91ce-caf2a07a5677")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "CONTACT_CIRCLE_10X10_10P_JOIN"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "33f118de-89d2-41d7-8d36-046972884dbf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "02b978fb-5121-43e4-8d01-9ff3c37ec5fb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "12b2258e-f234-42a4-a2ac-02ebb32ce67b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr board_only exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start 10.747989 -5.336735)
+		(end 40.784366 -27.159441)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "0a4e4b97-e298-4e2a-b212-ddd0b6d87b0e")
+	)
+	(fp_arc
+		(start 10.747989 -5.336735)
+		(mid 11.682805 -2.740815)
+		(end 12 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "7f55361c-8f7f-4db7-8505-b7f54fbbafcf")
+	)
+	(fp_arc
+		(start 40.784366 -27.159442)
+		(mid 46.901139 -14.187423)
+		(end 48.999998 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "514823d8-1930-4797-91e3-26b0bcc77fc6")
+	)
+	(fp_curve
+		(pts
+			(xy 11.999999 0) (xy 31.235 -1.6) (xy 48.15 -2) (xy 49 0)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "0fd6604c-4664-4b1e-a731-2a5354f00991")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "a1aaf253-ed69-4543-9a06-bb497b60769e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole custom
+		(at 12.266944 -2.877863)
+		(size 0.6 0.6)
+		(drill 0.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(arc
+						(start -0.266939 2.877861)
+						(mid -0.584134 0.137046)
+						(end -1.51895 -2.458874)
+					)
+					(xy 28.517427 -24.28158)
+					(arc
+						(start 28.517427 -24.281581)
+						(mid 34.6342 -11.309562)
+						(end 36.733059 2.877861)
+					)
+					(xy 36.733061 2.877861) (xy 36.732681 2.87697) (xy 36.698525 2.811643) (xy 36.652738 2.748061)
+					(xy 36.588911 2.679973) (xy 36.511232 2.613981) (xy 36.408452 2.542845) (xy 36.288836 2.474282)
+					(xy 36.135669 2.400759) (xy 35.962065 2.330394) (xy 35.74533 2.255813) (xy 35.504064 2.185074)
+					(xy 35.209098 2.111259) (xy 34.885135 2.042055) (xy 34.496041 1.971219) (xy 34.073237 1.90584)
+					(xy 33.573188 1.840525) (xy 33.034612 1.781578) (xy 32.406257 1.724607) (xy 31.734628 1.674968)
+					(xy 30.960656 1.629401) (xy 30.138942 1.592162) (xy 29.202854 1.561234) (xy 28.215087 1.539637)
+					(xy 27.102209 1.52667) (xy 25.934548 1.524011) (xy 24.63332 1.532288) (xy 23.275374 1.551785) (xy 21.778884 1.584386)
+					(xy 20.225262 1.629) (xy 18.532925 1.688581) (xy 16.7849 1.7608) (xy 14.904058 1.849348) (xy 12.97109 1.950927)
+					(xy 10.918209 2.0695) (xy 8.81899 2.201221) (xy 6.620016 2.349734) (xy 4.382629 2.511202) (xy 2.072194 2.688309)
+					(xy -0.26694 2.877861)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "46ba2795-8abb-45a5-ab70-907e708220af")
+	)
+	(embedded_fonts no)
+)

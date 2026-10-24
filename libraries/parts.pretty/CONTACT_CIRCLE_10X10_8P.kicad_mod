@@ -8,7 +8,7 @@
 		(unlocked yes)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "a07a3b37-8742-4d8e-8a87-7d2ca960df4a")
+		(uuid "9b4244b7-ca67-4d68-b4e5-580a0e953aa4")
 		(effects
 			(font
 				(size 1 1)
@@ -20,7 +20,7 @@
 		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "5bf023b3-f14a-4809-80cc-58545d1f5948")
+		(uuid "a12cb507-836a-436d-9741-a831d0e31e25")
 		(effects
 			(font
 				(size 1 1)
@@ -33,7 +33,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "5c847563-a60d-4586-bb15-db8acadda822")
+		(uuid "5c6240c8-7197-49f1-bd78-91d123994a86")
 		(effects
 			(font
 				(size 1 1)
@@ -46,7 +46,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "3653141f-e75b-451a-b10b-2bc848383b6b")
+		(uuid "ece50214-302a-4ab4-b102-6eb9c0fd5676")
 		(effects
 			(font
 				(size 1 1)
@@ -64,7 +64,7 @@
 			(type solid)
 		)
 		(layer "Dwgs.User")
-		(uuid "7e2e04bd-4389-4041-9fc8-11110486dcc7")
+		(uuid "52721819-b22e-4775-900b-044905d9d3f3")
 	)
 	(fp_arc
 		(start 9.780814 -6.952386)
@@ -75,7 +75,7 @@
 			(type default)
 		)
 		(layer "Dwgs.User")
-		(uuid "17014600-52d8-4973-928a-f854ce7af327")
+		(uuid "b806157c-e604-405b-b5a1-46a46265b9ea")
 	)
 	(fp_arc
 		(start 36.033572 -33.205144)
@@ -86,7 +86,7 @@
 			(type default)
 		)
 		(layer "Dwgs.User")
-		(uuid "fba9c5a7-f7c6-4e5b-9142-ca8462c621c7")
+		(uuid "0c22d411-6411-47a4-bedd-ae5a99fc6b3f")
 	)
 	(fp_curve
 		(pts
@@ -97,13 +97,13 @@
 			(type solid)
 		)
 		(layer "Dwgs.User")
-		(uuid "fa2ef755-cb45-447c-b0ee-74ce91b6d6b1")
+		(uuid "f522c9f9-3ad5-4714-b8be-d1f1c92e8a2e")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 2.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "4ea0a8cd-36c3-48a6-a341-87b2a74b67e8")
+		(uuid "115b390d-2261-4317-8278-0ed41f73c955")
 		(effects
 			(font
 				(size 1 1)
@@ -111,12 +111,10 @@
 			)
 		)
 	)
-	(pad "1" thru_hole custom
+	(pad "1" smd custom
 		(at 12.003321 -3.831487)
 		(size 0.6 0.6)
-		(drill 0.3)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
+		(layers "F.Cu" "F.Mask")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -149,7 +147,45 @@
 				(fill yes)
 			)
 		)
-		(uuid "41507dcc-921c-447e-aa25-98ba6d554127")
+		(uuid "e7b48676-eba5-4965-8307-adaee974a863")
+	)
+	(pad "1" smd custom
+		(at 12.003321 -3.831487)
+		(size 0.6 0.6)
+		(layers "B.Cu" "B.Mask")
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(arc
+						(start 36.996678 3.831487)
+						(mid 33.640106 -13.992021)
+						(end 24.030251 -29.373657)
+					)
+					(xy -2.222508 -3.120898)
+					(arc
+						(start -2.222507 -3.120899)
+						(mid -0.571572 0.182499)
+						(end -0.003321 3.831487)
+					)
+					(xy -0.003322 3.831487) (xy 2.335812 3.641935) (xy 4.646247 3.464828) (xy 6.883634 3.30336) (xy 9.082608 3.154847)
+					(xy 11.181827 3.023126) (xy 13.234708 2.904553) (xy 15.167676 2.802974) (xy 17.048518 2.714426)
+					(xy 18.796543 2.642207) (xy 20.48888 2.582626) (xy 22.042502 2.538012) (xy 23.538992 2.505411)
+					(xy 24.896938 2.485914) (xy 26.198166 2.477637) (xy 27.365827 2.480296) (xy 28.478705 2.493263)
+					(xy 29.466472 2.51486) (xy 30.40256 2.545788) (xy 31.224274 2.583027) (xy 31.998246 2.628594) (xy 32.669875 2.678233)
+					(xy 33.29823 2.735204) (xy 33.836806 2.794151) (xy 34.336855 2.859466) (xy 34.759659 2.924845)
+					(xy 35.148753 2.995681) (xy 35.472716 3.064885) (xy 35.767682 3.1387) (xy 36.008948 3.209439) (xy 36.225683 3.28402)
+					(xy 36.399287 3.354385) (xy 36.552454 3.427908) (xy 36.67207 3.496471) (xy 36.77485 3.567607) (xy 36.852529 3.633599)
+					(xy 36.916356 3.701687) (xy 36.962143 3.765269) (xy 36.996299 3.830596) (xy 36.996679 3.831487)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "7382cd4e-7a82-4904-85cd-257244ea4d20")
 	)
 	(embedded_fonts no)
 )
