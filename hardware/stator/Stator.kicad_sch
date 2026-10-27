@@ -280,6 +280,105 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(wire
 		(pts
@@ -442,6 +541,104 @@
 		(uuid "b7dc4f7e-3cde-421f-b0bc-88d2499c38dd")
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 175.26 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0112144f-1b53-42b7-87ba-39c641451822")
+		(property "Reference" "H4"
+			(at 177.8 88.8999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TOOLING"
+			(at 177.8 91.4399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:ToolingHole_1.152mm"
+			(at 175.26 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 175.26 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLC Part" "-"
+			(at 175.26 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "-"
+			(at 175.26 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Stator"
+				(path "/2960c633-cbac-45b0-a960-be3128ace1e9"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
 		(at 114.3 90.17 0)
 		(unit 1)
@@ -505,7 +702,7 @@
 				)
 			)
 		)
-		(property "JLC Part" "C20612445"
+		(property "JLC Part" "C5157421"
 			(at 114.3 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -516,7 +713,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "YZ50315020R-03"
+		(property "Manufacturer Part" "YZ203115028R-03"
 			(at 114.3 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -603,7 +800,7 @@
 				)
 			)
 		)
-		(property "JLC Part" "C20612445"
+		(property "JLC Part" "C5157421"
 			(at 114.3 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -614,7 +811,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "YZ50315020R-03"
+		(property "Manufacturer Part" "YZ203115028R-03"
 			(at 114.3 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -840,6 +1037,104 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 175.26 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "533d7ac6-31a6-4b8f-8f08-a0eb44eaab29")
+		(property "Reference" "H2"
+			(at 177.8 67.3099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TOOLING"
+			(at 177.8 69.8499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:ToolingHole_1.152mm"
+			(at 175.26 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 175.26 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLC Part" "-"
+			(at 175.26 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "-"
+			(at 175.26 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Stator"
+				(path "/2960c633-cbac-45b0-a960-be3128ace1e9"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
 		(at 114.3 101.6 0)
 		(unit 1)
@@ -903,7 +1198,7 @@
 				)
 			)
 		)
-		(property "JLC Part" "C20612445"
+		(property "JLC Part" "C5157421"
 			(at 114.3 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -914,7 +1209,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "YZ50315020R-03"
+		(property "Manufacturer Part" "YZ203115028R-03"
 			(at 114.3 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1001,7 +1296,7 @@
 				)
 			)
 		)
-		(property "JLC Part" "C20612445"
+		(property "JLC Part" "C5157421"
 			(at 114.3 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -1012,7 +1307,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "YZ50315020R-03"
+		(property "Manufacturer Part" "YZ203115028R-03"
 			(at 114.3 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -1200,7 +1495,7 @@
 				)
 			)
 		)
-		(property "JLC Part" "C20612445"
+		(property "JLC Part" "C5157421"
 			(at 114.3 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -1211,7 +1506,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "YZ50315020R-03"
+		(property "Manufacturer Part" "YZ203115028R-03"
 			(at 114.3 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -1298,7 +1593,7 @@
 				)
 			)
 		)
-		(property "JLC Part" "C20612445"
+		(property "JLC Part" "C5157421"
 			(at 114.3 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -1309,7 +1604,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "YZ50315020R-03"
+		(property "Manufacturer Part" "YZ203115028R-03"
 			(at 114.3 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -1497,7 +1792,7 @@
 				)
 			)
 		)
-		(property "JLC Part" "C20612445"
+		(property "JLC Part" "C5157421"
 			(at 114.3 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -1508,7 +1803,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "YZ50315020R-03"
+		(property "Manufacturer Part" "YZ203115028R-03"
 			(at 114.3 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -1696,7 +1991,7 @@
 				)
 			)
 		)
-		(property "JLC Part" "C20612445"
+		(property "JLC Part" "C5157421"
 			(at 114.3 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -1707,7 +2002,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "YZ50315020R-03"
+		(property "Manufacturer Part" "YZ203115028R-03"
 			(at 114.3 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -1725,6 +2020,104 @@
 			(project "Stator"
 				(path "/2960c633-cbac-45b0-a960-be3128ace1e9"
 					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 175.26 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b15d05c7-4841-494f-a4c4-5e02f2b8a7f9")
+		(property "Reference" "H1"
+			(at 177.8 57.1499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TOOLING"
+			(at 177.8 59.6899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:ToolingHole_1.152mm"
+			(at 175.26 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 175.26 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLC Part" "-"
+			(at 175.26 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "-"
+			(at 175.26 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Stator"
+				(path "/2960c633-cbac-45b0-a960-be3128ace1e9"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -1927,6 +2320,104 @@
 			(project "Stator"
 				(path "/2960c633-cbac-45b0-a960-be3128ace1e9"
 					(reference "J15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 175.26 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f48c2278-3d5c-489d-b44b-311f888b6af3")
+		(property "Reference" "H3"
+			(at 177.8 78.7399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TOOLING"
+			(at 177.8 81.2799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:ToolingHole_1.152mm"
+			(at 175.26 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 175.26 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLC Part" "-"
+			(at 175.26 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "-"
+			(at 175.26 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Stator"
+				(path "/2960c633-cbac-45b0-a960-be3128ace1e9"
+					(reference "H3")
 					(unit 1)
 				)
 			)

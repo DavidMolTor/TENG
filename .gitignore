@@ -19,6 +19,10 @@ _autosave-*
 *-save.kicad_pcb
 fp-info-cache
 
+# Plugin fodlers and files
+Production
+fabrication-toolkit-options.json
+
 # Netlist files (exported from Eeschema)
 *.net
 
